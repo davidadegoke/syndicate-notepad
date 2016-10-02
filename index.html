@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Noted - Notepad App!</title>
+
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <!--<link rel="stylesheet" type="text/css" href="assets/css/style.css">-->
+  <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+  
+        <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet">
+        <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+
+        <!-- CSS -->
+        <link href="assets/css/app_1.min.css" rel="stylesheet">
+        <link href="assets/css/app_2.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/demo.css">
+
+
+  </head>
+
+
+<body ng-app="noted" ng-controller="genCtrl">
+<div ng-include="'assets/templates/nav-top.html'"></div>
+<div ng-include src="'assets/templates/sidebar.html'"></div>
+
+<div ui-view style="margin-top: -55%;"></div>
+
+
+
+<!--<div ng-include="'assets/templates/footer.html'"></div>-->
+<!-- Page Loader -->
+        <div class="page-loader">
+            <div class="preloader pls-blue">
+                <svg class="pl-circular" viewBox="25 25 50 50">
+                    <circle class="plc-path" cx="50" cy="50" r="20" />
+                </svg>
+
+                <p>Please wait...</p>
+            </div>
+        </div>
+<!-- Core Javascript files -->
+<!--Please don't remove this....itz essential for electron to work with jquery -->
+
+<script type="text/javascript">
+  window.jQuery = window.$ = require('./assets/js/jquery.js');
+</script>
+<!--## -->
+        <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="vendors/bower_components/flot/jquery.flot.js"></script>
+        <script src="vendors/bower_components/flot/jquery.flot.resize.js"></script>
+        <script src="vendors/bower_components/flot.curvedlines/curvedLines.js"></script>
+        <script src="vendors/sparklines/jquery.sparkline.min.js"></script>
+        <script src="vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+
+        <script src="vendors/bower_components/moment/min/moment.min.js"></script>
+        <script src="vendors/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+        <script src="vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
+        <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="vendors/bower_components/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="assets/js/angular.js"></script>
+        
+        <script src="assets/js/angular-ui-router.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/controllers.js"></script>
+        <script src="assets/js/main.min.js"></script>
+        <script src="assets/js/routes.js"></script>
+        <script src="assets/js/time-script.js"></script>
+<!--<script src="assets/js/services.js"></script>-->
+
+<!-- ## Core Javascript files ## -->
+
+</body>  
+</html>

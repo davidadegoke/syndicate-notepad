@@ -1,0 +1,52 @@
+<section id="main">
+            <aside id="sidebar" class="sidebar c-overflow">
+                <div class="s-profile">
+                    <a href="#" data-ma-action="profile-menu-toggle">
+                        <div class="sp-pic">
+                            <img src="assets/img/profile-pics/1.jpg" alt="user Image">
+                        </div>
+
+                        <div class="sp-info">
+                            {{username}}
+
+                            <!--<i class="zmdi zmdi-caret-down"></i>-->
+                        </div>
+                    </a>
+                </div>
+
+                <ul class="main-menu" id="menu">
+                    <li class="active">
+                        <a href="#/"><i class="zmdi zmdi-home"></i> Dashboard</a>
+                    </li>
+                   <!-- <li class="sub-menu">
+                        <a href="#" data-ma-action="submenu-toggle"><i class="zmdi zmdi-view-compact"></i> Headers</a>
+
+                        <ul>
+                            <li><a href="textual-menu.html">Textual menu</a></li>
+                            <li><a href="image-logo.html">Image logo</a></li>
+                            <li><a href="top-mainmenu.html">Mainmenu on top</a></li>
+                        </ul>
+                    </li>-->
+                    <li><a href="#/notes"><i class="zmdi zmdi-book"></i>Notes</a></li>
+                    <li><a href="#/todos"><i class="zmdi zmdi-check"></i>Todos</a></li>
+                    <li><a href="#/calendar"><i class="zmdi zmdi-calendar"></i> Calendar and events</a></li>
+                    <li><a href="#/settings"><i class="zmdi zmdi-settings"></i> Settings</a></li>
+                    <li><a href="#/about"><i class="zmdi zmdi-help"></i>About and Help</a></li>
+                    <li><a href="/"><i class="zmdi zmdi-power-off"></i>Quit</a></li>
+                    
+                </ul>
+            </aside>
+ </section>
+
+            
+ <script type="text/javascript">
+ var sidebar = function(){
+ 	$('#menu li').on('click', function(){
+    $('li.active').removeClass('active');
+    $(this).addClass('active');
+
+    
+});
+ }
+ 	$(document).ready(sidebar);
+ </script>

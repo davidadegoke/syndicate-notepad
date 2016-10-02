@@ -1,0 +1,1 @@
+var noted = angular.module('noted', ['ui.router']);

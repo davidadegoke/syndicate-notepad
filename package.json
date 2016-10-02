@@ -1,0 +1,29 @@
+{
+  "name": "Noted-Notepad-App",
+  "version": "1.0.0",
+  "description": "A more interactive note taking desktop app MWE inspired by the need to make note-taking and task organization more fun and inter-active",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidadegoke/noted.git"
+  },
+  "keywords": [
+    "interactive",
+    "fun",
+    "simple",
+    "notepad",
+    "todo"
+  ],
+  "author": "Syndicate Technologies",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidadegoke/noted/issues"
+  },
+  "homepage": "https://github.com/davidadegoke/noted#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.0"
+  }
+}

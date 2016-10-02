@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+Thumbs.db
+.idea
+master/node_modules
+master/bower_components
+_backups
+.sass-cache
+.tmp
